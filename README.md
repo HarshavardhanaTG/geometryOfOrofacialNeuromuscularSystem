@@ -1,1 +1,1 @@
-# geometryOfOrofacialNeuromuscularSystem
+# Geometry of orofacial neuromuscular system
