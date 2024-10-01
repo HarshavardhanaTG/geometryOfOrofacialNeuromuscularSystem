@@ -87,7 +87,7 @@ class rnnNet(nn.Module):
             outRe.append(torch.cat((hDRe.log(), hLRe), dim = 1))
         h = torch.stack(out).mean(0)
         hRe = torch.stack(outRe).mean(0)
-        h = h + torch.flip(hRe, dims = [1])
+        h = h + hRe
         return self.cls(h)
 
     def cholDe(self, x):
